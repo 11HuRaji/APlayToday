@@ -14,7 +14,7 @@ logout.addEventListener("click", async (e) => {
 
   if (response.status == 202) {
     localStorage.removeItem("token");
-    window.location.assign("./login.html");
+    window.location.assign("/client/index/index.html");
   } else {
     console.log(data);
   }
