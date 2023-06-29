@@ -3,6 +3,7 @@ const cors = require("cors");
 const logger = require("morgan");
 
 const playsRouter = require("./routes/play");
+const userRouter = require("./routes/user");
 
 const app = express();
 
@@ -15,5 +16,6 @@ app.get("/", (req, res) => {
 });
 
 app.use("/plays", playsRouter);
+app.use("/users", userRouter);
 
 module.exports = app;
